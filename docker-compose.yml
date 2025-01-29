@@ -5,6 +5,5 @@ services:
     build: .
     ports:
       - "33333:3000"
-    environment:
-      - COOLIFY_API_KEY
-      - COOLIFY_API_URL
+    env_file:
+      - .env
