@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  svelte-app:
+    build: .
+    ports:
+      - "33333:3000"
+    env_file:
+      - .env
