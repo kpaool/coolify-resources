@@ -4,6 +4,9 @@
     import type {Application} from '$lib/types'
 
     function splitAtLastOccurrence(str:string, separator:string) {
+        if(!str){
+          return "#"
+        }
         if(str.split(":").length==2){
             return str
         }
