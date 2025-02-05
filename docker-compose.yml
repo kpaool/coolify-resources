@@ -4,6 +4,6 @@ services:
   svelte-app:
     build: .
     ports:
-      - "33333:3000"
+      - "3333:3000"
     env_file:
       - .env
